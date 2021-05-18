@@ -1,0 +1,22 @@
+
+
+.rw-launcher {
+    background-color: #9b095f;
+}
+
+.rw-header.rw-with-subtitle{
+    background-color: #9b004f;
+}
+.rw-conversation-container{
+    border-radius:20px;
+}
+
+.rw-conversation-container .rw-replies {
+display:block;
+}
+
+p{
+color:black
+}
+
+

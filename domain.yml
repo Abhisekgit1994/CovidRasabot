@@ -1,0 +1,44 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - hello_world
+  - search_resturant
+  - covid_details
+
+
+actions:
+  - action_hello_world
+  - action_search_resturant
+  - action_covid_details
+
+responses:
+  utter_greet:
+  - text: "Hey! I am Raksha .I can help you with covid details given any state input"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am Raksha , help you when you need !!"
+
+  utter_hello_world:
+  - text: "Hello world !Happy Programming."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

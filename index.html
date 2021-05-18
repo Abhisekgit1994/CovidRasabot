@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Bot</title>
+    <script src="https://cdn.jsdelivr.net/npm/rasa-webchat@0.11.5/lib/index.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="webchat"></div>
+<script>
+    WebChat.default.init({
+        selector: "#webchat",
+        initPayload: "/get_started",
+        interval: 1000,
+        customData: {"language": "en"},
+        socketUrl: "http://localhost:5005",
+        socketPath: "/socket.io/",
+        title: "Raksha",
+        subtitle: "Help you when you need!",
+        inputTextFieldHint: "Type a message...",
+
+        hideWhenNotConnected: false,
+        fullScreenMode: false,
+        profileAvatar: "/bot.png",
+        showfullScreenButton: false,
+        params: {
+        "storage": "session"
+        }
+  })
+</script>
+</body>
+</html>
